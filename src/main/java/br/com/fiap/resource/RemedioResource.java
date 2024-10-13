@@ -1,7 +1,7 @@
 package br.com.fiap.resource;
 
 import br.com.fiap.bo.RemedioBO;
-import br.com.fiap.to.RemedioTo;
+import br.com.fiap.to.RemedioTO;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.core.Response;
@@ -14,7 +14,7 @@ public class RemedioResource {
 
     @GET
     public Response findAll() {
-        ArrayList<RemedioTo> resultado = remedioBO.findAll();
+        ArrayList<RemedioTO> resultado = remedioBO.findAll();
         Response.ResponseBuilder response = null;
         if (response != null) {
             response = Response.ok(); // 200 OK

@@ -2,17 +2,17 @@ package br.com.fiap.to;
 
 import java.time.LocalDate;
 
-public class RemedioTo {
+public class RemedioTO {
     private Long codigo;
     private String nome;
     private Double preco;
     private LocalDate dataDeFabricacao;
     private LocalDate dataDeValidade;
 
-    public RemedioTo() {
+    public RemedioTO() {
     }
 
-    public RemedioTo(Long codigo, String nome, Double preco, LocalDate dataDeFabricacao, LocalDate dataDeValidade) {
+    public RemedioTO(Long codigo, String nome, Double preco, LocalDate dataDeFabricacao, LocalDate dataDeValidade) {
         this.codigo = codigo;
         this.nome = nome;
         this.preco = preco;
