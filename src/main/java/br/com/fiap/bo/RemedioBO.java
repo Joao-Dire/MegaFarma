@@ -15,5 +15,10 @@ public class RemedioBO {
         return remedioDAO.findAll();
     }
 
+    public RemedioTO save(RemedioTO remedio) {
+        remedioDAO = new RemedioDAO();
+        // aqui se implementa a regra de negocios
+        return  remedioDAO.save(remedio);
+    }
 
 }
